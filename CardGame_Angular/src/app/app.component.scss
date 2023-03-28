@@ -1,0 +1,39 @@
+.main-container {
+  margin-top: 90px;
+  & > div {
+    text-align: center;
+    margin: 28px 0;
+  }
+
+  * > div {
+    margin-bottom: 12px;
+  }
+
+  .suits img {
+    height: 48px;
+    width: auto;
+  }
+
+  img {
+    margin: 6px;
+  }
+
+  .values > div {
+    font-size: 24px;
+  }
+
+  button {
+    background-color: coral;
+    border: none;
+    font-size: 20px;
+    padding: 12px 24px;
+    border-radius: 0;
+    cursor: pointer;
+    transition: 0.1s;
+
+    &:hover {
+      background-color: rgb(255, 85, 23);
+      transition: 0.1s;
+    }
+  }
+}

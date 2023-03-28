@@ -1,0 +1,30 @@
+<div class="main-container">
+  <div class="suits">
+    <div *ngIf="randomSuits">
+      <img *ngFor="let suit of randomSuits" src="/assets/images/{{suit}}.png" alt="couleur {{suit}}">
+    </div>
+    <button (click)="onGetRandomSuits()">Ordre aléatoire des couleurs</button>
+  </div>
+
+  <div class="values">
+    <div *ngIf="randomValues">
+      {{ randomValuesToString() }}
+    </div>
+    <button (click)="onGetRandomValues()">Ordre aléatoire des valeurs</button>
+  </div>
+
+  <div class="randomHand">
+    <div *ngIf="randomHand">
+      <img *ngFor="let card of randomHand" src="/assets/images/{{card}}.gif" alt="carte {{card}}">
+    </div>
+    <button (click)="onGetRandomHand()">Afficher 10 cartes aléatoires</button>
+  </div>
+
+  <div class="sortedHand">
+    <div *ngIf="sortedHand">
+      <img *ngFor="let card of sortedHand" src="/assets/images/{{card}}.gif" alt="carte {{card}}">
+    </div>
+    <button (click)="onSortHand()">Trier les cartes par couleur et valeur</button>
+  </div>
+
+</div>
